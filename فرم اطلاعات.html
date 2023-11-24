@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>فرم اطلاعات 
+    </title>
+
+</head>
+
+<body    style="background-color: #d2fefd;"               dir="rtl"   >
+
+<center>
+    <div style="width:1000px;height:40px;padding:14px;border:13px solid rgb(0, 0, 0);" > <font size = "5"> <b>سلام بر شما دوست گرامی به وبسایت بنده خوش امدید لطفا برای اینکه به خانواده بزرگ ما بپیوندید نام نویسی کنید با تشکر </b> </font>  
+</center>
+
+<br><br><br><br><br><br><br><br>
+
+
+
+<center>
+<div style="width:270px;height:20px;padding:14px;border:9px solid rgb(0, 0, 0);"> <font size = "5"><b>مشخصات خود را لطفا وارد کنید </b> </font>
+</center>
+
+
+<br><br><br><br><br><br>
+
+<center>
+<header>
+<form id="survey-form">
+  <div class="form-group"    style="width:350px;height:20px;padding:14px;border:2px solid rgb(0, 0, 0);"      > 
+    <label id="nameabel" for="name">نام خود را وارد کنید   :   </label>
+    <input
+    
+      type="text"
+      name="نام"
+      id="نام"
+      class="form-control"
+      
+      placeholder="اینجا وارد کنید "
+      required
+    />
+  </header>
+
+
+
+
+
+
+
+
+  <br><br>
+
+
+
+<form id="survey-form">
+  <div class="form-group"    style="width:350px;height:24px;padding:14px;border:2px solid rgb(0, 0, 0);"      >
+    <label id="nameabel" for="name">نام خانوادگی خود را وارد کنید   :   </label>
+    <input
+      type="text"
+      name="نام خانوادگی"
+      id="نام خانوادگی"
+      class="form-control"
+      
+      placeholder="اینجا وارد کنید "
+      required
+    />
+  </div>
+  
+
+
+  <br><br><br>
+
+
+  <div class="form-group"    style="width:350px;height:24px;padding:14px;border:2px solid rgb(0, 0, 0);"  >  
+    <label id="email-label" for="email">ادرس email خود را وارد کنید  : </label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      class="form-control"
+      placeholder="اینجا وارد کنید "
+      required
+    />
+  </div>
+
+
+
+
+  <br><br><br>
+
+
+
+    <div class="form-group"  style="width:350px;height:20px;padding:14px;border:2px solid rgb(0, 0, 0);"  >
+        <label id="number-label" for="number"
+          >  سن خود را وارد کنید  :  <span class="clue"></span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="20"
+          max="55"
+          class="form-control"
+          placeholder="Age"
+        />
+    </div>
+
+ 
+
+
+    <br><br><br>
+
+
+
+
+      <div class="form-group"  style="width:350px;height:30x;padding:14px;border:2px solid rgb(0, 0, 0);"  >
+        <p>میزان تحصیلات خود را وارد کنید </p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value> تحصیلات خود را انتخاب کنید</option>
+          <option value="سیکل">سیکل</option>
+          <option value="دیپلم">دیپلم</option>
+          <option value="لیسانس">لیسانس</option>
+          <option value="فوق لیسانس">فوق لیسانس</option>
+          <option value="دکترا">دکترا</option>
+          <option value="پرفسوران">پرفسوران</option>
+          
+        </select>
+      </div>
+
+
+
+
+
+      <br><br><br>
+
+
+
+
+      <div class="form-group"  style="width:350px;height:30x;padding:14px;border:2px solid rgb(0, 0, 0);"  >
+        <p>در چه حوزه ای کاری بیشتر مهارت دارید</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value> مهارت خود را انتخاب کنید</option>
+          <option value="شبکه">شبکه</option>
+          <option value="نرم افزار">نرم افزار</option>
+          <option value="سخت افزار">سخت افزار</option>
+          <option value="برنامه نویسی">برنامه نویسی</option>
+          <option value="بازار یابی">بازار یابی</option>
+          <option value="مدیریت">مدیریت</option>
+          
+        </select>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br><br><br>
+
+
+      <div class="form-group"  style="width:350px;height:30x;padding:14px;border:2px solid rgb(0, 0, 0);"   >
+        <p> ایا شما سابقه کار دارید؟</p>
+        <label>
+          <input
+            name="planet_visit"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />بله</label
+        >
+        <label>
+          <input
+            name="planet_visit"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />خیر</label
+        >
+      </div>
+
+
+
+
+<br><br><br>
+
+
+
+      <div style="width:350px;height:30x;padding:14px;border:2px solid rgb(0, 0, 0);"   >
+<form action="files/get_data2.php" method="POST">
+ <label for="TF"> <b>  اطلاعات شما ثبت شود؟</b>:</label>
+
+ <input type="submit" value="ثبت">
+</form>
+      </div>
+
+
+
+<br><br><br>
+
+
+
+
+<details>
+  <summary> <b> ایا در طول کار به مشکل خوردید</b> </summary>
+  <p>اگر به مشکل واجهه شدید می توانید سایت را ببندید و مجدد ان را باز کنید و پیگیر کار خود شوید </p>
+ </details>
+
+
+
+<br><br><br>
+
+
+<center>
+  <div style="width:350px;height:20px;padding:14px;border:3px solid rgb(0, 0, 0);">
+
+<a  href="file:///C:/New%20folder%20(2)/web/%D9%81%D8%B1%D9%85%20%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA.html"> <b> >>>>>>>>>>بازگشت به صفحه نخست<<<<<<<<<<< </b>
+</a>
+</center>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
